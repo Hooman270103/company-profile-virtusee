@@ -76,7 +76,7 @@ Route::prefix('logo-sliders')->name('logo-sliders.')->group(function () {
 });
 
 Route::prefix('hero')->name('hero.')->group(function () {
-    Route::get('getData', [HeroImageSlidersController::class, 'getData'])->name('getData'); //api
+    Route::get('getData', [HeroImageSlidersController::class, 'getData'])->name('getData');
 });
 
 Route::prefix('counter')->name('counter.')->group(function () {
@@ -145,7 +145,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::prefix('hero-image-sliders')->name('hero-image-sliders.')->group(function () {
             Route::get('/', [HeroImageSlidersController::class, 'index'])->name('index');
             Route::post('store', [HeroImageSlidersController::class, 'store'])->name('store');
-            Route::get('allData', [HeroImageSlidersController::class, 'allData'])->name('all-data'); //api
+            Route::get('allData', [HeroImageSlidersController::class, 'allData'])->name('all-data');
             Route::delete('destroy-all', [HeroImageSlidersController::class, 'destroyAll'])->name('destroy-all');
             Route::delete('destroy/{id}', [HeroImageSlidersController::class, 'destroy'])->name('destroy');
             Route::post('update-position', [HeroImageSlidersController::class, 'updatePosition'])->name('update-position');
@@ -165,7 +165,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::prefix('logo-sliders')->name('logo-sliders.')->group(function () {
             Route::get('/', [LogoSlidersController::class, 'index'])->name('index');
             Route::post('store', [LogoSlidersController::class, 'store'])->name('store');
-            Route::get('allData', [LogoSlidersController::class, 'allData'])->name('all-data'); //api
+            Route::get('allData', [LogoSlidersController::class, 'allData'])->name('all-data');
             Route::delete('destroy-all', [LogoSlidersController::class, 'destroyAll'])->name('destroy-all');
             Route::delete('destroy/{id}', [LogoSlidersController::class, 'destroy'])->name('destroy');
             Route::post('update-position', [LogoSlidersController::class, 'updatePosition'])->name('update-position');
